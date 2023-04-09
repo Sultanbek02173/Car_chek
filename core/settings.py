@@ -39,6 +39,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    #rest
+    'rest_framework',
+    'django_filters',
+
+    #apps
+    'car',
+
+    # docs
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +66,9 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR.joinpath("tamplates")
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
