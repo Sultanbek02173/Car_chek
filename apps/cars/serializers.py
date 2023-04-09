@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from car.models import Car, SpecialMarks, PeriodsOwnership
+from apps.cars.models import Car, SpecialMarks, PeriodsOwnership
 
 class SpecialMarksSerializers(serializers.ModelSerializer):
     class Meta:

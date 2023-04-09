@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from car.models import Car, SpecialMarks, PeriodsOwnership
+from apps.cars.models import Car, SpecialMarks, PeriodsOwnership
 
 # Register your models here.
 admin.site.register(Car)
