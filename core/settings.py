@@ -29,7 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['sultan02175.pythonanywhere.com']
 
-
+# 'sultan02175.pythonanywhere.com'
 # Application definition
 
 INSTALLED_APPS = [
@@ -66,7 +66,7 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["tamlates"],
+        'DIRS': [BASE_DIR / "tamlates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -130,7 +130,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
-STATIC_ROOT = '/home/Sultan02175/Car_chek/static'
+STATIC_ROOT = ' '
 MEDIA_ROOT = '/home/Sultan02175/Car_chek/media'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
